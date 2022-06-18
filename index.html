@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hito Grupal Tercer Trimestre</title>
+    <link rel="stylesheet" href="style/style_index.css">
+    <link rel="icon" type="image/png" href="imgs/nmflgo2.png" sizes="100x100">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/d70d441cb5.js" crossorigin="anonymous"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Mulish&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+</head>
+<body>
+    <header>
+        <div id="nav2" onclick="aparecer()"><li class="navli"><i class="fas fa-chevron-right"></i></li></div>
+        <nav id="nav">
+                <ul class="menuprincipal">
+                    <li class="navli foto-pri" style=" border-radius: 200%;"><a href="index.html"><img src="imgs/api.png" alt="ef-logo" style="width: 50px; "></a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-bullhorn"></i><a href="busqueda.html">IviPagina</a></li>
+                    <br>
+                    <li class="navli"><i class="fab fa-buffer"></i><a href="notas.html">JaviPagina</a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-users"></i><a href="marvel.html">JuanPagina</a></li>
+                    <br>
+                    <li class="navli" onclick="ocultar()"><i class="fas fa-chevron-left"></i><p >Ocultar</p></li>
+                </ul>
+                <ul class="menuprincipal-res">
+                    <div class="boton-res-container">
+                        <img src="imgs/bars-solid.png" alt="icono-barras-horizontales" class="whitebars">
+                        <img src="imgs/api.png" alt="ef-logo" class="ef-responsive">
+                    </div>
+                    <div class="menuprincipal-res-container">
+                        <li class="navli-res"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                        <li class="navli-res"><i class="fas fa-bullhorn"></i><a href="busqueda.html">IviPagina</a></li>
+                        <li class="navli-res"><i class="fab fa-buffer"></i><a href="notas.html">JaviPagina</a></li>
+                        <li<li class="navli-res"><i class="fas fa-users"></i><a href="marvel.html">JuanPagina</a></li>
+                        
+                    </div>
+                    
+                </ul>
+        </nav>
+
+    </header>
+    <section  style=" animation: resplandor 0s !important; animation: mover2 5s; " id="section">
+        <div class="articulos">
+            <div class="titulo-section">
+                <h1>Definiciones básicas</h1>
+            </div>
+            <div class="intro">
+                <p class="textoderecha-p"> <strong> <em> Escrito por el grupo</em> </strong> </p>
+                <br>
+                <h2>HTTP</h2>
+                <p class="texto">HTTP es un protocolo de acceso para las páginas web a través de Internet. HTTP son las siglas para Hypertext Transfer Protocol que se traduce al español como el “protocolo de transferencia de hipertextos” </p> 
+                <br>
+                <h2>API REST</h2>
+                <p class="texto">API REST es un conjunto de reglas que permite que diferentes programas se comuniquen entre sí. Describe la manera apropiada para que un desarrollador de software componga un programa en un servidor que se comunica con varias aplicaciones cliente. </p> 
+                <br>
+                <h2>POSTMAN</h2>
+                <p class="texto">Postman es una aplicación que nos permite realizar pruebas API. Es un cliente HTTP que nos da la posibilidad de testear ‘HTTP requests’ a través de una interfaz gráfica de usuario, por medio de la cual obtendremos diferentes tipos de respuesta que posteriormente deberán ser validados. </p> 
+                <br>
+                <h2>JSON</h2>
+                <p class="texto">El acrónimo JSON deriva de la expresión de la lengua inglesa JavaScript Object Notation, que puede traducirse como Notación de Objeto de JavaScript. Se trata de un formato de texto ligero que permite intercambiar datos. JSON se basa en un subconjunto de JavaScript, un lenguaje de programación imperativo, orientado a objetos e interpretado que fue creado por el estadounidense Brendan Eich. De todos modos, mantiene independencia respecto a este lenguaje. </p> 
+                
+                <br>   
+                
+                
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+
+<script>
+    function ocultar() {
+        document.getElementById("nav").style.animation = "moverI 1.5s"
+        document.getElementById("nav").style.marginLeft = "-1000px";
+        document.getElementById("nav2").style.animation = "mover 1.5s"
+        document.getElementById("nav2").style.marginLeft = "0";
+        document.getElementById("section").style.marginLeft = "10%";
+        document.getElementById("section").style.width = "100% !important";
+        document.getElementById("section").style.marginRight = "-1%";
+    }
+    function aparecer() {
+        document.getElementById("nav2").style.animation = "moverI 3s"
+        document.getElementById("nav").style.animation = "mover 1.5s"
+        document.getElementById("nav").style.marginLeft = "0";
+        setTimeout(function(){
+            document.getElementById("nav2").style.marginLeft = "-1000px";;
+        },1000);
+        document.getElementById("section").style.marginLeft = "20%";
+        document.getElementById("section").style.width = "75% !important";
+    }
+</script>
+
+
+
+</html>    

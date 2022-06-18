@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hito Grupal Tercer Trimestre</title>
+    <link rel="stylesheet" href="style/style_index.css">
+    <link rel="icon" type="image/png" href="imgs/nmflgo2.png" sizes="100x100">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/d70d441cb5.js" crossorigin="anonymous"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Mulish&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/marvel.css">
+    
+</head>
+<body>
+    <header>
+        <div id="nav2" onclick="aparecer()"><li class="navli"><i class="fas fa-chevron-right"></i></li></div>
+        <nav id="nav">
+                <ul class="menuprincipal">
+                    <li class="navli foto-pri" style=" border-radius: 200%;"><a href="index.html"><img src="imgs/api.png" alt="ef-logo" style="width: 50px; "></a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-bullhorn"></i><a href="busqueda.html">IviPagina</a></li>
+                    <br>
+                    <li class="navli"><i class="fab fa-buffer"></i><a href="notas.html">JaviPagina</a></li>
+                    <br>
+                    <li class="navli"><i class="fas fa-users"></i><a href="marvel.html">JuanPagina</a></li>
+                    <br>
+                    <li class="navli" onclick="ocultar()"><i class="fas fa-chevron-left"></i><p >Ocultar</p></li>
+                </ul>
+                <ul class="menuprincipal-res">
+                    <div class="boton-res-container">
+                        <img src="imgs/bars-solid.png" alt="icono-barras-horizontales" class="whitebars">
+                        <img src="imgs/api.png" alt="ef-logo" class="ef-responsive">
+                    </div>
+                    <div class="menuprincipal-res-container">
+                        <li class="navli-res"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+                        <li class="navli-res"><i class="fas fa-bullhorn"></i><a href="busqueda.html">IviPagina</a></li>
+                        <li class="navli-res"><i class="fab fa-buffer"></i><a href="notas.html">JaviPagina</a></li>
+                        <li<li class="navli-res"><i class="fas fa-users"></i><a href="marvel.html">JuanPagina</a></li>
+                        
+                    </div>
+                    
+                </ul>
+        </nav>
+
+    </header>
+    <section  style=" animation: resplandor 0s !important; animation: mover2 5s; " id="section">
+        <div class="articulos">
+            <div class="titulo-section">
+                <h1>Probando la API de Marvel</h1>
+            </div>
+                <p>
+                    Accederemos a la informacion que nos proporciona la API de marvel la cual son varios comics de multiples personajes del mundo de marvel. 
+                </p>
+                <p>
+                    Para poder ver la informacion de cada Personaje mostrado solo tienes que pinchar en la imagen.
+                </p><br>
+                <div class="container">
+                    <div class="row" id="marvel-row">
+                        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" id="marvel2-row">
+                        
+                    </div>
+                </div>
+                
+                
+
+        </div>
+    </section>
+    
+
+</body>
+
+<script>
+    function ocultar() {
+        document.getElementById("nav").style.animation = "moverI 1.5s"
+        document.getElementById("nav").style.marginLeft = "-1000px";
+        document.getElementById("nav2").style.animation = "mover 1.5s"
+        document.getElementById("nav2").style.marginLeft = "0";
+        document.getElementById("section").style.marginLeft = "10%";
+        document.getElementById("section").style.width = "100% !important";
+        document.getElementById("section").style.marginRight = "-1%";
+    }
+    function aparecer() {
+        document.getElementById("nav2").style.animation = "moverI 3s"
+        document.getElementById("nav").style.animation = "mover 1.5s"
+        document.getElementById("nav").style.marginLeft = "0";
+        setTimeout(function(){
+            document.getElementById("nav2").style.marginLeft = "-1000px";;
+        },1000);
+        document.getElementById("section").style.marginLeft = "20%";
+        document.getElementById("section").style.width = "75% !important";
+    }
+
+   
+
+</script>
+
+ <script src="js/s_marvel.js"></script>
+
+</html>    
+
+
+
+
+
+
+
+
+
+
+

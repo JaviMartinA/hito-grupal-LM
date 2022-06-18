@@ -1,0 +1,500 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    animation: resplandor 1s;
+}
+
+*::selection{
+    background: rgb(119, 243, 237);
+    color: rgb(78, 75, 75);
+}
+
+a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+
+
+.fa-bullhorn:before {
+    content: "\f0a1";
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    display: block;
+    background-image: url("../imgs/fondoego.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
+    z-index: -10;
+    transition: all 5s;
+
+}
+
+nav{
+    background-color: whitesmoke;
+    top: 0;
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    z-index: 200;
+    animation: mover 1.5s;
+}
+
+#nav2{
+    background-color: whitesmoke;
+    top: 0;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    z-index: 200;
+    animation: mover 1.5s;
+}
+
+
+
+
+.menuprincipal{
+    user-select: none; 
+}
+
+.menuprincipal-res{
+    display: none;
+}
+
+.navli{
+    display: inline-block;
+    padding: 20px;
+    color:black;
+    user-select: none; 
+}
+
+
+.navli:hover {
+    color: rgb(212, 199, 199);
+    background-color: white;
+    transition: all 2s;
+}
+.navli:hover a{
+    color: rgb(212, 199, 199);
+    color: black;
+    transition: all 2s;
+}
+
+.navli:hover > .fas{
+    color: black !important;
+    transition: all 2s;
+}
+
+.navli:hover a i{
+    display: inline-block;
+    color: rgb(211, 20, 20);
+}
+
+.navli a{
+    color: black;
+    text-decoration: none;
+}
+.navli i{
+    color: black;
+    width: 30px;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+    
+}
+
+foto-pri{
+    margin: 50px;
+}
+
+
+
+.boton-res-container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: white !important;
+    margin-top: -64px;
+    z-index: 100 !important; 
+}
+.boton-res{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+/*
+color: white;
+    font-size: 30px;
+    
+*/
+
+section{
+    display: block;
+    width: 75%;
+    height: auto;
+    margin:40px;
+    margin-top: 20px !important;
+    margin-left: 20%;
+    background-color: whitesmoke;
+    margin-top: 125px;
+    box-sizing: border-box;
+    z-index: 0 !important;
+    margin-right: 0;
+    transition: all 5s;
+    opacity: 0.95;
+}
+
+section:hover{
+    background-color: white;
+    transition: all 5s;
+}
+
+
+.titulo-section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+aside{
+    margin-top: 125px;
+    top: 0;
+    opacity: 0.95;
+    position: absolute;
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    overflow: hidden;
+    right: 2.5%;
+    background-color: whitesmoke;
+    justify-content: center;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    padding: 5px;
+    z-index: 5;
+    animation: mover3 3s !important;
+}
+aside:hover{
+    background-color: white;
+    transition: all 5s;
+}
+aside h2{
+    text-align: center;
+}
+
+.foto-detras{
+    position: relative;
+    display: flex;  
+    padding: 25px;
+    margin-left: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-detras img{
+    position: relative; 
+    width: 75%;
+    margin: 0 auto;
+}
+
+.texto-delante{
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -50%;
+    margin: auto;
+}
+
+.texto-delante p{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    display: block;
+    background-color: #c8b6b9; 
+    opacity: 75%;
+    color: rgb(119, 243, 237);
+    transition: opacity 1s;
+    opacity: 0;
+    text-align: center;
+    z-index: -2;
+}
+
+
+aside:hover .patrocinador{
+    opacity: 1;
+    z-index: 500;
+    transition: opacity 1s;
+}
+
+.whitebars{
+    margin: 5px;
+    margin-bottom: 0px;
+    width: 50px;
+    float: right;
+}
+
+.ef-responsive{
+    margin: 5px;
+    margin-bottom: 0px;
+    width: 50px;
+}
+
+.intro{
+    display: inline-block;
+    padding: 15px 15px 15px;
+    box-sizing: border-box;
+}
+.texto{
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height : 30px;
+    margin-top: 25px;
+}
+.textoderecha-p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    text-align: right !important;
+}
+
+.foto1{
+    display: block;
+    width: 40% !important;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+.articulos{
+    display: inline-block;
+    padding: 25px;
+    padding-right: 12px;
+}
+
+.textoimg{
+    float: right;
+}   
+
+@keyframes resplandor {
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+@keyframes mover {
+    from{
+        
+        margin-left: -1000px; 
+    }
+    to{
+        margin-top: 0; 
+    }
+}
+
+@keyframes moverI {
+    from{
+        
+        margin-left: 0; 
+    }
+    to{
+        margin-left: -1000px; 
+    }
+}
+@keyframes moverI2 {
+    from{
+        
+        margin-left: 0; 
+    }
+    to{
+        margin-left: -1px; 
+    }
+}
+
+
+
+@keyframes mover2 {
+    from{
+        
+        margin-top: -1000px; 
+    }
+    to{
+        margin-top: 125px; 
+    }
+}
+
+@keyframes mover2 {
+    from{
+        
+        margin-top: -1000px; 
+    }
+    to{
+        margin-top: 125px; 
+    }
+}
+
+@keyframes mover3 {
+    from{
+        
+        right: -500px; 
+    }
+    to{
+        right: 42px; 
+    }
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width:1220px){
+    *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        justify-content: center;
+        padding: auto;
+    }
+    .menuprincipal{
+        display: none;
+    }
+    nav{
+        display: block;
+        height: 37px;
+        width: 100%;
+        background-color: black;
+        animation-duration: 0s;
+        animation: resplandor 0.1s;
+    }
+    .menuprincipal-res{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        margin-top: 37px;
+        padding-top: 27px;
+        padding-right: -20px;
+        top: 0;
+    }
+    .menuprincipal-res-container{
+        position: relative; 
+        top: -1000px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        height: calc(100vh- 64px);
+        background: rgb(58, 55, 55);
+        opacity: 90%;
+        transition: all 2s;
+        z-index: 1;
+    }
+    .navli-res{
+        width: 100%;
+        padding: 9px 20px;
+        box-sizing: border-box;
+    }
+    .navli-res i {
+        color: white;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+    }
+
+    .navli-res a{
+        color: white;
+        text-decoration: none;
+    }
+    .boton-res-container{
+        width: 100%;
+        background-color: black;
+        margin-right: -15px;
+        z-index: 500;
+    }
+    .boton-res-container i{
+        position: relative;
+        float: right;
+    }
+    .menuprincipal-res:hover .menuprincipal-res-container{
+        margin-top: -25px;
+        top: -5px;
+        
+    }
+    .menuprincipal-res:hover > .menuprincipal-res{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section{
+        display: inline-block;
+        margin-top: 100px !important;
+        margin-left: 20px;
+        margin-right: 20px ;
+        width: auto;
+        height: auto;
+        
+    }
+
+    #nav2{
+        margin-left: -1000px !important;
+    }
+
+    .intro img{
+        object-fit: cover
+    }
+    
+    aside{
+        position: inherit;
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        height: auto;
+    }
+    .intro{
+        margin-left: 0;
+        height: 25%;
+        
+    }
+
+    aside img{
+        position: relative;
+        width: auto;
+        float: right;
+    }
+    aside h2{
+        display: inline-block;
+        
+    }
+    .foto-detras{
+        position: relative;
+        
+    }
+}
