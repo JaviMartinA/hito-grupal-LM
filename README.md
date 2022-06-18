@@ -1,1 +1,1 @@
-"# HitoGrupalLMTercerTrimestre" 
+# HitoGrupalLMTercerTrimestre
